@@ -1,6 +1,6 @@
 language: java
 jdk:
-- oraclejdk10
+- oraclejdk8
 before_cache:
 - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
 - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
@@ -28,7 +28,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: watson-developer-cloud/spring-boot-starter
-    jdk: oraclejdk10
+    jdk: oraclejdk8
     tags: true
 
 - provider: releases
@@ -37,7 +37,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: watson-developer-cloud/spring-boot-starter
-    jdk: oraclejdk10
+    jdk: oraclejdk8
     tags: true
 
 notifications:
